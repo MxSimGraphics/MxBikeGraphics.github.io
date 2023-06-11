@@ -145,3 +145,10 @@ img {
 #Seat:hover{
   transform: scale(1.15);
 }
+#gloves{
+  height: 300px;
+  transition: 1s;
+}
+#gloves:hover{
+  transform: scale(1.15);
+}
