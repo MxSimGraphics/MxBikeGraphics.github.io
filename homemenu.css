@@ -154,6 +154,11 @@ header label{
   display: block;
 }
 
+.dropdown-content{
+  max-height: 65vh;
+  overflow: scroll;
+}
+
 .dropdown2 {
   float: left;
   overflow: hidden;
@@ -194,6 +199,11 @@ header label{
 
 .show {
   display: block;
+}
+
+.dropdown-content2{
+  max-height: 57vh;
+  overflow: scroll;
 }
 
 @media(max-width:991px){
