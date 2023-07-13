@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html style="margin-top: 30px;">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="style.css">
+<title>Alpinestar RedBull</title>
+<link rel="icon" href="bildes/MxSim&BikesGraphics.png">
+</head>
+<body>
+  <header>
+    <img class="logo" src="bildes/MxSim&BikesGraphics.png">
+
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><img src="bildes/MenuBar.png" style="width: 40px;"></label>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/index.html">HOME</a></li>
+            <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/Shop/Shop.html">SHOP↓</a>
+                <ul>
+                    <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/KTM%20shop/ktmveikals.html">KTM</a></li>
+                    <li><a href="">Gloves</a></li>
+                    <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/Husqvarna%20shop/husqvarnaveikals.html">Husqvarna</a></li>
+                    <li><a href="">Helmet</a></li>
+                </ul>
+            </li>
+            <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/Contact/Contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+    
+<div class = "card-wrapper" style="margin-top: 60px;">
+  <div class = "card">
+    <div class = "product-imgs">
+      <div class = "img-display">
+        <div class = "img-showcase">
+          <img src = "AlpinestarRedBull1/alpinestar redbull 1.png" alt = "ktm image">
+          <img src = "AlpinestarRedBull1/alpinestar redbull 2.png" alt = "ktm image">
+          <img src = "AlpinestarRedBull1/alpinestar redbull 3.png" alt = "ktm image">
+        </div>
+      </div>
+      <div class = "img-select">
+        <div class = "img-item">
+          <a href = "#" data-id = "1">
+            <img src = "AlpinestarRedBull1/alpinestar redbull 1.png" alt = "ktm image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "2">
+            <img src = "AlpinestarRedBull1/alpinestar redbull 2.png" alt = "ktm image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "3">
+            <img src = "AlpinestarRedBull1/alpinestar redbull 3.png" alt = "ktm image">
+          </a>
+        </div>
+      </div>
+    </div>
+      <div class = "product-price">
+        <p class = "name">Alpinestar RedBull Gear</p><br>
+        <p class = "last-price">Price: <span>$5.00</span></p>
+        <p class = "Available">Available: <span>Mx simulator<span style="color: green;">✓</span><span> Mx bikes<span style="color: green;">✓</span></span></span></p>
+      </div>
+    </div>
+    <div class = "product-detail">
+      <h2>Description: </h2>
+      <p>Custom jersey design for your gear. If you need number for your next Motocross race, you can buy just jersey prints for your gear from us.</p>
+      <ul>
+        <li>Category: <span>Gear</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+        <form action="https://formspree.io/f/mnqyojgj" method="POST">
+          <input type="text" name="Gear" value="Alpinestar RedBull" style="display: none;">
+          <input type="text" name="Full Name" placeholder="Full name" required style="max-width: 60%;">
+            <input type="text" name="Race number" placeholder="Race number" required style="max-width: 60%;">
+
+            <!--flag option-->
+            <select name="Flag" id="slct1" style="max-width: 60%;">
+              <option>Flag Number</option></select>
+              <select name="Continent" id="slct2" style="max-width: 60%;display: none;"></select>
+              <select name="Country" id="slct3" style="max-width: 60%;display: none;"></select>
+
+            <input type="email" name="Email" placeholder="Email" required style="max-width: 60%;">
+            <input type="tlr" name="Sponsors" placeholder="Sponsors" required style="max-width: 60%;">
+            <br>
+            <br>
+            <textarea name="Message" placeholder="Message" required style="max-width: 60%;"></textarea>
+            <button type="sumbit">Send</button>
+        </form>
+    </div>
+<script src="select.js"></script>
+</body>
+</html>
