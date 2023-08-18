@@ -9,17 +9,6 @@ species.forEach(function addSpecies(item) {
     slct1.appendChild(option);
 });
 
-let species2 = ["2023", "2022", "2021", "2020",];
-
-let slct2 = document.getElementById("slct2");
-
-species2.forEach(function addSpecies(item) {
-    let option  = document.createElement("option");
-    option.text = item;
-    option.value = item;
-    slct2.appendChild(option);
-});
-
 const imgs = document.querySelectorAll('.img-select a');
 const imgBtns = [...imgs];
 let imgId = 1;
