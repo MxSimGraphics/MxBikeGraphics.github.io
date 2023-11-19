@@ -66,6 +66,7 @@ body{
 .card-wrapper{
     max-width: 1500px;
     margin: 0 auto;
+    margin-top: 140px;
 }
 img{
     width: 100%;
