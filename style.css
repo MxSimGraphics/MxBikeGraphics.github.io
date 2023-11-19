@@ -141,7 +141,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  margin-bottom: -1400px;
+  margin-bottom: -1650px;
 }
 .gallery .image{
   width: calc(100% / 3);
