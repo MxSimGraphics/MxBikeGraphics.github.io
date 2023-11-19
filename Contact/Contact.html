@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="contactmenu.css">
+<link rel="stylesheet" href="style.css">
+<title>Contact</title>
+<link rel="icon" href="bildes/MotomodsStudio.png">
+</head>
+<body style="background-color: white;">
+    <header>
+        <img class="logo" src="bildes/MotomodsStudio.png">
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><img src="bildes/MenuBar.png" style="width: 40px;"></label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/index.html">HOME</a></li>
+                <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/Shop/Shop.html">SHOP↓</a>
+                    <ul>
+                        <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/KTM%20shop/ktmveikals.html">KTM</a></li>
+                        <li><a href="">Gloves</a></li>
+                        <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/Husqvarna%20shop/husqvarnaveikals.html">Husqvarna</a></li>
+                        <li><a href="">Helmet</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/Contact/Contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Contact</h1>
+        <form action="https://formspree.io/f/mnqyojgj" method="POST">
+            <input type="text" name="Name" placeholder="Full name" required style="max-width: 60%;">
+            <input type="email" name="Email" placeholder="Email" required style="max-width: 60%;">
+            <select name="Brand" id="slct1" style="max-width: 60%;">
+                <option>Brand</option></select>
+                <select name="Brand" id="slct2" style="max-width: 60%;">
+                    <option>Other</option></select>
+            <br>
+            <br>
+            <textarea name="Messsage" placeholder="Message" required style="max-width: 60%;"></textarea>
+            <button type="sumbit">Send</button>
+        </form>
+    </div>
+    <script src="select.js"></script>
+</body>
+</html>
