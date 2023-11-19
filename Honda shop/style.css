@@ -36,7 +36,6 @@ nav .items .item:hover{
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
 }
 .gallery .image{
     width: calc(100% / 3);
