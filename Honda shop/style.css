@@ -41,6 +41,7 @@ nav .items .item:hover{
 .gallery .image{
     width: calc(100% / 3);
     padding: 7px;
+    margin-top: 15px;
 }
 .gallery .image.hide{
     display: none;
