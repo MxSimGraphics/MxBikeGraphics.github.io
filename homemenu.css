@@ -52,7 +52,7 @@ header .navbar ul li ul{
   position: absolute;
   left: 0;
   width: 100px;
-  background: #333;
+  background: #000000;
   display: none;
 }
 header .navbar ul li ul{
@@ -101,7 +101,7 @@ header label{
   }
 
   header .navbar ul li ul li{
-      background: #333;
+      background: #000000;
   }
 
   #menu-bar:checked ~ .navbar{
