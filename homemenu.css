@@ -86,7 +86,7 @@ header label{
   header .navbar{
       position: absolute;
       top: 100%; left: 0; right: 0;
-      background: #333;
+      background: #000000;
       border-top: 1px solid rgba(0, 0, 0,.1);
       display: none;
   }
