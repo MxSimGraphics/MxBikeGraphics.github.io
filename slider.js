@@ -1,8 +1,16 @@
 var counter = 1;
-setInterval(function(){
+var direction = 1;
+
+setInterval(function() {
     document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if(counter > 3){
-        counter = 1;
+
+    counter += direction;
+
+    if (counter > 3) {
+        counter = 2;
+        direction = -1;
+    } else if (counter < 1) {
+        counter = 2;
+        direction = 1;
     }
 }, 4000);
