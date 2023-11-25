@@ -83,6 +83,34 @@ img{
     }
 }
 
+@media all and (max-width: 320px){
+    .product-img{
+        width: 215px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.5s ease;
+    }
+    .product-info{
+        background: white;
+        padding: 2rem;
+        margin-top: -100px;
+    }
+}
+
+@media all and (max-width: 300px){
+    .product-img{
+        width: 198px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.5s ease;
+    }
+    .product-info{
+        background: white;
+        padding: 2rem;
+        margin-top: -110px;
+    }
+}
+
 @media screen and (min-width: 992px){
     .product-items{
         display: grid;
