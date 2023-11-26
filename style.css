@@ -141,7 +141,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  margin-bottom: -1400px;
+  margin-bottom: -1200px;
 }
 .gallery .image{
   width: calc(100% / 3);
@@ -203,5 +203,38 @@ body {
   }
   .gallery .image{
       width: 100%;
+  }
+}
+
+@media all and (max-width: 1600px){
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-bottom: -900px;
+  }
+}
+@media all and (max-width: 380px){
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-bottom: -1100px;
+  }
+}
+@media all and (max-width: 320px){
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-bottom: -900px;
+  }
+}
+@media all and (max-width: 300px){
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-bottom: -900px;
   }
 }
