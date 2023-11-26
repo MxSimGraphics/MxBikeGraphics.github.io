@@ -249,6 +249,14 @@ img{
     font-size: 20px;
     font-weight: bold;
 }
+@media (max-width: 1920px) {
+    .container {
+        margin-left: 900px;
+        padding: 20px;
+        margin-top: -300px;
+        text-align: center;
+      }
+}
 @media (max-width: 1600px) {
     .container {
         margin-left: 700px;
@@ -256,8 +264,8 @@ img{
         margin-top: -200px;
         text-align: center;
       }
-  }
-  @media (max-width: 990px) {
+}
+@media (max-width: 990px) {
     input[type="text"],
     input[type="email"],
     textarea {
@@ -267,8 +275,8 @@ img{
     select {
       width: 100%;
     }
-  }
-  @media all and (max-width: 380px){
+}
+@media all and (max-width: 380px){
     .container {
         margin-left: 00px;
         padding: 20px;
