@@ -1,4 +1,4 @@
-let species = ["Mx Simulator", "Mx Bikes", "Both"];
+let species = ["Mx Simulator", "Mx Bikes", "For Both"];
 
 let slct1 = document.getElementById("slct1");
 
