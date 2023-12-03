@@ -78,7 +78,7 @@ footer {
 }
 @media all and (max-width: 380px){
     footer {
-        width: 372px;
+        width: 373px;
         position: absolute;
         margin-left: -16px;
         margin-top: 1900px;
