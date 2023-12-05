@@ -187,7 +187,7 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 17px;
+        font-size: 22px;
         -webkit-text-stroke-width:2px;
         -webkit-text-stroke-color: black;
 
@@ -209,7 +209,7 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 18px;
         -webkit-text-stroke-width:2px;
         -webkit-text-stroke-color: black;
 
@@ -231,7 +231,7 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 13px;
+        font-size: 17px;
         -webkit-text-stroke-width:2px;
         -webkit-text-stroke-color: black;
 
