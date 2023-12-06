@@ -25,7 +25,7 @@ slct1.addEventListener("change", function () {
     if (years) {
         let secondDropdown = document.createElement("select");
         secondDropdown.name = "Year";
-        secondDropdown.id = "slct2";
+        secondDropdown.id = "slct12";
         secondDropdown.style.maxWidth = "60%";
 
         let defaultOption = document.createElement("option");
