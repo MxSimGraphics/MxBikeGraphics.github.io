@@ -1,6 +1,5 @@
-let species = ["Mx Simulator", "Mx Bikes",];
+let species = ["Mx Bikes",];
 let yearsByGame = {
-    "Mx Simulator": [2023],
     "Mx Bikes": [2023],
 };
 
