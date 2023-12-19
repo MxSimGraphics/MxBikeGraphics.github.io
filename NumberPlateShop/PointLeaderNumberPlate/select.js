@@ -11,7 +11,7 @@ species.forEach(function addSpecies(item) {
 });
 
 //Bike
-let species2 = ["KTM","Honda", "Yamaha", "Kawasaki", "Suzuki", "Husqvarna", "GasGas"];
+let species2 = ["KTM","Honda", "Yamaha", "Kawasaki", "Husqvarna", "GasGas"];
 
 let slct2 = document.getElementById("slct2");
 
