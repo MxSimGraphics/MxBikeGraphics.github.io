@@ -272,7 +272,7 @@ h1 {
 }
 @media(max-width: 720px){
   .text-wrapper {
-    margin-top: 440px;
+    margin-top: 400px;
   }
   
   @keyframes move-rtl {
