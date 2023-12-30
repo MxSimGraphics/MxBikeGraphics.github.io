@@ -289,6 +289,26 @@ h1{
     }
   }
 }
+@media all and (max-width: 720px){
+  .text-wrapper{
+    margin-top: -341px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    background: black;
+    overflow: hidden;
+  }
+
+  @keyframes move-rtl{
+    0%{
+      transform: translateX(30%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+}
 @media all and (max-width: 380px){
   .text-wrapper{
     margin-top: -361px;
