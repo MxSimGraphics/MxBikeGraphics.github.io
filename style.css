@@ -270,7 +270,21 @@ h1 {
     }
   }
 }
-@media(max-width: 380px){
+@media(max-width: 720px){
+  .text-wrapper {
+    margin-top: 440px;
+  }
+  
+  @keyframes move-rtl {
+    0% {
+      transform: translateX(40%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+@media(max-width: 412px){
   .text-wrapper {
     margin-top: 450px;
   }
