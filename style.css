@@ -177,24 +177,52 @@ body {
   transform: scale(1.1);
 }
 @media(max-width: 1600px){
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-bottom: -1000px;
+  }
   .gallery .image{
-    width: (100%);
-}
+    width: calc(100% / 3);
+    padding: 7px;
+  }
 }
 @media(max-width: 380px){
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-bottom: -1100px;
+  }
   .gallery .image{
-    width: calc(100%);
-}
+    width: calc(100% / 1);
+    padding: 7px;
+  }
 }
 @media(max-width: 320px){
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-bottom: -900px;
+  }
   .gallery .image{
-    width: (100%);
-}
+    width: calc(100% / 1);
+    padding: 7px;
+  }
 }
 @media(max-width: 300px){
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-bottom: -1000px;
+  }
   .gallery .image{
-    width: (100%);
-}
+    width: calc(100% / 1);
+    padding: 7px;
+  }
 }
 
 .text-wrapper {
