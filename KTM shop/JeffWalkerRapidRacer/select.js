@@ -194,7 +194,7 @@ showRiderInputs();
 
 
 
-let species5 = ["Seat cover 1", "Seat cover 2", "Seat cover 3", "Seat cover 4", "Seat cover 5", "Seat cover 6", "Seat cover 7", "Seat cover 8", "Seat cover 9", "Seat cover 10", "Seat cover 11", "Seat cover 12", "Other"];
+let species5 = ["Seat cover 1", "Seat cover 2", "Seat cover 3", "Seat cover 4", "Seat cover 5", "Seat cover 6", "Seat cover 7", "Other"];
 
 let slct5 = document.getElementById("slct5");
 let otherSeatCoverInput = document.getElementById("otherSeatCover");
