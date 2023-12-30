@@ -301,6 +301,21 @@ h1 {
     }
   }
 }
+@media(max-width: 720px){
+  .text-wrapper {
+    /* Updated margin-top value */
+    margin-top: -975px;
+  }
+
+  @keyframes move-rtl {
+    0% {
+      transform: translateX(60%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
 @media(max-width: 700px){
   .text-wrapper {
     /* Updated margin-top value */
