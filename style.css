@@ -188,7 +188,7 @@ body {
     padding: 7px;
   }
 }
-@media(max-width: 380px){
+@media(max-width: 412px){
   .gallery{
     display: flex;
     flex-wrap: wrap;
@@ -272,7 +272,7 @@ h1 {
 }
 @media(max-width: 412px){
   .text-wrapper {
-    margin-top: 430px;
+    margin-top: 450px;
   }
   
   @keyframes move-rtl {
