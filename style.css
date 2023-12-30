@@ -13,6 +13,7 @@ body {
   max-width: 100%;
   height: 70vh;
   overflow: hidden;
+  margin-top: 70px;
 }
 
 .slides {
@@ -110,6 +111,7 @@ body {
   background: red;
 }
 
+
 @media (max-width: 600px) {
   .slider {
     height: 60vh;
@@ -133,6 +135,7 @@ body {
 
   .navigation-auto div:not(:last-child) {
     margin-right: 12px;
+    margin-top: 1px;
   }
 }
 
@@ -239,7 +242,8 @@ body {
   }
 }
 
-.text-wrapper{
+.text-wrapper {
+  /* Updated margin-top value */
   margin-top: -610px;
   width: 100%;
   position: absolute;
@@ -248,7 +252,8 @@ body {
   background: black;
   overflow: hidden;
 }
-h1{
+
+h1 {
   font-size: 30px;
   text-transform: uppercase;
   color: white;
@@ -260,91 +265,75 @@ h1{
   animation: move-rtl 15000ms linear infinite;
 }
 
-@keyframes move-rtl{
-  0%{
+@keyframes move-rtl {
+  0% {
     transform: translateX(190%);
   }
-  100%{
+  100% {
     transform: translateX(-100%);
   }
 }
 
 
-@media all and (max-width: 1600px){
-  .text-wrapper{
+@media all and (max-width: 1600px) {
+  .text-wrapper {
+    /* Updated margin-top value */
     margin-top: -495px;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    background: black;
-    overflow: hidden;
   }
-  @keyframes move-rtl{
-    0%{
+
+  @keyframes move-rtl {
+    0% {
       transform: translateX(150%);
     }
-    100%{
+    100% {
       transform: translateX(-100%);
     }
   }
 }
-@media all and (max-width: 380px){
-  .text-wrapper{
-    margin-top: -331px;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    background: black;
-    overflow: hidden;
+
+@media all and (max-width: 380px) {
+  .text-wrapper {
+    /* Updated margin-top value */
+    margin-top: -361px;
   }
 
-  @keyframes move-rtl{
-    0%{
+  @keyframes move-rtl {
+    0% {
       transform: translateX(30%);
     }
-    100%{
+    100% {
       transform: translateX(-100%);
     }
   }
 }
-@media all and (max-width: 320px){
-  .text-wrapper{
+
+@media all and (max-width: 320px) {
+  .text-wrapper {
+    /* Updated margin-top value */
     margin-top: -250px;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    background: black;
-    overflow: hidden;
   }
 
-  @keyframes move-rtl{
-    0%{
+  @keyframes move-rtl {
+    0% {
       transform: translateX(20%);
     }
-    100%{
+    100% {
       transform: translateX(-100%);
     }
   }
 }
-@media all and (max-width: 300px){
-  .text-wrapper{
+
+@media all and (max-width: 300px) {
+  .text-wrapper {
+    /* Updated margin-top value */
     margin-top: -320px;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    background: black;
-    overflow: hidden;
   }
 
-  @keyframes move-rtl{
-    0%{
+  @keyframes move-rtl {
+    0% {
       transform: translateX(20%);
     }
-    100%{
+    100% {
       transform: translateX(-100%);
     }
   }
