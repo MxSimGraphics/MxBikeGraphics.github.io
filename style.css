@@ -291,7 +291,7 @@ h1{
 }
 @media all and (max-width: 380px){
   .text-wrapper{
-    margin-top: -341px;
+    margin-top: -331px;
     width: 100%;
     position: absolute;
     display: flex;
