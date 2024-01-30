@@ -120,6 +120,7 @@
   margin-left: 800px;
   text-align: left;
   margin-top: -320px;
+  padding-right: 10px;
 }
 .mxs{
   width: 300px;
@@ -184,5 +185,44 @@
     width: 250px;
     margin-left: 20px;
     margin-top: 350px;
+  }
+}
+
+
+
+
+.email{
+  margin-left: 300px;
+  font-weight: bold;
+  font-size: 22px;
+}
+@media all and (max-width: 1660px){
+  .email{
+    margin-left:250px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+}
+@media all and (max-width: 380px){
+  .email{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 320px){
+  .email{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 300px){
+  .email{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 17px;
   }
 }
