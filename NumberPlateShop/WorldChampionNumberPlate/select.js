@@ -33,17 +33,6 @@ species3.forEach(function addSpecies(item) {
     slct3.appendChild(option);
 });
 
-// Background Number
-let species4 = ["Yes", "No"];
-let slct4 = document.getElementById("slct4");
-
-species4.forEach(function addSpecies(item) {
-  let option = document.createElement("option");
-  option.text = item;
-  option.value = item;
-  slct4.appendChild(option);
-});
-
 // Race Number
 var selectElement = document.getElementById("numberSelect");
 
