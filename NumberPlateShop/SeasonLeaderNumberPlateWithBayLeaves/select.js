@@ -124,6 +124,51 @@ species6.forEach(function addSpecies(item) {
     slct6.appendChild(option);
 });
 
+
+let species7 = ["Yes", "No"];
+
+let slct7 = document.getElementById("slct7");
+
+species7.forEach(function addSpecies(item) {
+    let option  = document.createElement("option");
+    option.text = item;
+    option.value = item;
+    slct7.appendChild(option);
+});
+
+// Assuming you have already declared slct7 and selectElement as shown in your provided code
+
+// Get the "Race Number" heading element
+let raceNumberHeading = document.getElementById("racenumber");
+
+// Add an event listener to the "Background Number" dropdown
+slct7.addEventListener("change", function () {
+  // Get the selected value from the "Background Number" dropdown
+  let backgroundNumberOption = slct7.value;
+
+  // Get the "Race Number" dropdown element
+  let raceNumberSelect = document.getElementById("numberSelect");
+
+  // Show or hide the "Race Number" dropdown and heading based on the selected option
+  if (backgroundNumberOption === "Yes") {
+    raceNumberSelect.style.display = "block";
+    raceNumberHeading.style.display = "block";
+  } else {
+    raceNumberSelect.style.display = "none";
+    raceNumberHeading.style.display = "none";
+  }
+});
+
+// Set the initial state of the "Race Number" dropdown and heading based on the default value of "Background Number" dropdown
+// (assuming the default option is the first one)
+if (slct7.value === "Yes") {
+  document.getElementById("numberSelect").style.display = "block";
+  raceNumberHeading.style.display = "block";
+} else {
+  document.getElementById("numberSelect").style.display = "none";
+  raceNumberHeading.style.display = "none";
+}
+
 var selectElement = document.getElementById("numberSelect");
 
 // Loop through numbers from 1 to 999
