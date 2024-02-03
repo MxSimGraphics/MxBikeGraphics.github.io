@@ -1,0 +1,147 @@
+let species = ["Mx Simulator", "Mx Bikes"];
+
+let slct1 = document.getElementById("slct1");
+let slct2 = document.getElementById("slct2");
+let slct3 = document.getElementById("slct3");
+let otherInputDiv = document.getElementById("otherInputDiv");
+let bikeHeading = document.getElementById("bikeHeading");
+
+species.forEach(function addSpecies(item) {
+  let option = document.createElement("option");
+  option.text = item;
+  option.value = item;
+  slct1.appendChild(option);
+});
+
+slct1.addEventListener("change", function () {
+  // Clear existing options in the second dropdown
+  slct2.innerHTML = "<option>Select an option...</option>";
+
+  // Get the selected value from the first dropdown
+  let selectedGame = slct1.value;
+
+  // Create options for the second dropdown based on the selected value
+  if (selectedGame === "Mx Simulator" || selectedGame === "Mx Bikes") {
+    // Show the heading and the third dropdown
+    bikeHeading.style.display = "block";
+    slct3.style.display = "block";
+
+    // Create options for the second dropdown based on the selected value
+    if (selectedGame === "Mx Simulator") {
+      let mxSimulatorOptions = ["mxsemf", "racefactorygaming", "Other"];
+      mxSimulatorOptions.forEach(function (option) {
+        let newOption = document.createElement("option");
+        newOption.text = option;
+        newOption.value = option;
+        slct2.appendChild(newOption);
+      });
+
+      // Update options in the third dropdown based on the selected game
+      updateBikeOptions(["KTM", "Honda", "Yamaha", "Kawasaki", "Husqvarna"]);
+    } else if (selectedGame === "Mx Bikes") {
+      let mxBikesOptions = ["mxbgp", "Other"];
+      mxBikesOptions.forEach(function (option) {
+        let newOption = document.createElement("option");
+        newOption.text = option;
+        newOption.value = option;
+        slct2.appendChild(newOption);
+      });
+
+      // Update options in the third dropdown based on the selected game
+      updateBikeOptions(["KTM", "Honda", "Yamaha", "Kawasaki", "Suzuki", "Husqvarna", "GasGas"]);
+    }
+  } else {
+    // Hide the heading and the third dropdown
+    bikeHeading.style.display = "none";
+    slct3.style.display = "none";
+  }
+
+  // Show or hide the "Options" heading and the second dropdown based on the selected game
+  optionsHeading.style.display = selectedGame === "Select an option..." ? "none" : "block";
+  slct2.hidden = selectedGame === "Select an option...";
+
+  // Show or hide the text input based on the selected option in the second dropdown
+  otherInputDiv.style.display = slct2.value === "Other" ? "block" : "none";
+});
+
+slct2.addEventListener("change", function () {
+  // Show or hide the text input based on the selected option in the second dropdown
+  otherInputDiv.style.display = slct2.value === "Other" ? "block" : "none";
+});
+
+// Function to update options in the third dropdown
+function updateBikeOptions(bikeOptions) {
+  // Clear existing options in the third dropdown
+  slct3.innerHTML = "<option>Select an option...</option>";
+
+  // Add new options to the third dropdown
+  bikeOptions.forEach(function (option) {
+    let newOption = document.createElement("option");
+    newOption.text = option;
+    newOption.value = option;
+    slct3.appendChild(newOption);
+  });
+}
+
+// Initialize options in the third dropdown
+updateBikeOptions([]);
+
+
+
+
+
+//model/cc
+let species4 = ["125cc", "250cc", "450cc",];
+
+let slct4 = document.getElementById("slct4");
+
+species4.forEach(function addSpecies(item) {
+    let option  = document.createElement("option");
+    option.text = item;
+    option.value = item;
+    slct4.appendChild(option);
+});
+
+let species5 = ["World Championship", "AMA Motocross", "Supercross", "WSX", "WMX"];
+
+let slct5 = document.getElementById("slct5");
+
+species5.forEach(function addSpecies(item) {
+    let option  = document.createElement("option");
+    option.text = item;
+    option.value = item;
+    slct5.appendChild(option);
+});
+
+let species6 = ["125", "250", "450", "MX2", "MX1", "MXGP", "OPEN"];
+
+let slct6 = document.getElementById("slct6");
+
+species6.forEach(function addSpecies(item) {
+    let option  = document.createElement("option");
+    option.text = item;
+    option.value = item;
+    slct6.appendChild(option);
+});
+
+
+//Image slider
+const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
