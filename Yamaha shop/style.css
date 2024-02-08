@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --gray: #ededed;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Utility stylings */
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+
+/* product section */
+.products{
+    background: var(--alice-blue);
+    padding: 3.2rem 0;
+}
+.product{
+    margin: 2rem;
+    position: relative;
+}
+.product-content{
+    background: var(--gray);
+    cursor: pointer;
+}
+.product-img{
+    width: 470px;
+    height: 200px;
+    margin: 0 auto;
+    transition: 0.5s ease;
+}
+.product-info{
+    background: white;
+    padding: 2rem;
+    margin-top: 50px;
+}
+
+.product-name{
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-price{
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+}
+.product-img img{
+    transition: transform 0.6s ease;
+}
+.product:hover .product-img img{
+    transform: scale(1.1);
+}
+
+@media all and (max-width: 380px){
+    .product-img{
+        width: 260px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.5s ease;
+    }
+    .product-info{
+        background: white;
+        padding: 2rem;
+        margin-top: -75px;
+    }
+}
+
+@media all and (max-width: 320px){
+    .products{
+        background: var(--alice-blue);
+        padding: 3.2rem 0;
+    }
+    .product-img{
+        width: 215px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.5s ease;
+    }
+    .product-info{
+        background: white;
+        padding: 2rem;
+        margin-top: -100px;
+    }
+}
+
+@media all and (max-width: 300px){
+    .products{
+        background: var(--alice-blue);
+        padding: 3.2rem 0;
+    }
+    .product-img{
+        width: 198px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.5s ease;
+    }
+    .product-info{
+        background: white;
+        padding: 2rem;
+        margin-top: -110px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .products{
+        margin-left: -195px;
+        background: var(--alice-blue);
+        padding: 3.2rem 0;
+    }
+
+    .products .text-light{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.Yamaha{
+    margin-top: 33px;
+    width: 1920px;
+    height: 450px;
+    max-width: 1903px;
+    background-image: url(Yamahabildes/YamahaShop1.png);
+    color: white;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 45px;
+   -webkit-text-stroke-width:3px;
+   -webkit-text-stroke-color: black;
+
+   .text{
+    transform: skew(-8deg);
+   }
+}
+@media all and (max-width: 1600px){
+    .Yamaha{
+        max-width: 1600px;
+        margin-top: 33px;
+        width: 1583px;
+        height: 450px;
+        position: relative;
+        background-image: url(Yamahabildes/YamahaShop2.png);  
+    }
+}
+
+@media all and (max-width: 380px){
+    .Yamaha{
+        max-width: 380px;
+        margin-top: 0px;
+        width: 360px;
+        height: 330px;
+        position: relative;
+        background-image: url(Yamahabildes/YamahaShop3.png);  
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        -webkit-text-stroke-width:2px;
+        -webkit-text-stroke-color: black;
+
+   .text{
+    transform: skew(-8deg);
+   }
+    }
+}
+
+@media all and (max-width: 320px){
+    .Yamaha{
+        max-width: 320px;
+        margin-top: 30px;
+        width: 299px;
+        height: 260px;
+        position: relative;
+        background-image: url(Yamahabildes/YamahaShop4.png);  
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        -webkit-text-stroke-width:2px;
+        -webkit-text-stroke-color: black;
+
+   .text{
+    transform: skew(-8deg);
+   }
+    }
+}
+
+@media all and (max-width: 300px){
+    .Yamaha{
+        max-width: 300px;
+        margin-top:35px;
+        width: 279px;
+        height: 230px;
+        position: relative;
+        background-image: url(Yamahabildes/YamahaShop5.png);  
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        -webkit-text-stroke-width:2px;
+        -webkit-text-stroke-color: black;
+
+   .text{
+    transform: skew(-8deg);
+   }
+    }
+}
+
+.customBike{
+    position: absolute;
+    width: 11rem;
+    padding: 1rem;
+    cursor: pointer;
+    background: rgb(124, 12, 12);
+    color: white;
+    border-radius: 40px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    left: 85%;
+    margin-top: 10px;
+}
+
+@media all and (max-width: 380px){
+    .customBike{
+        position: absolute;
+        width: 11rem;
+        padding: 1rem;
+        cursor: pointer;
+        background: rgb(124, 12, 12);
+        color: white;
+        border-radius: 40px;
+        margin-left: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        left: 25%;
+        margin-top: 10px;
+    }
+}
+
+@media all and (max-width: 320px){
+    .customBike{
+        position: absolute;
+        width: 11rem;
+        padding: 1rem;
+        cursor: pointer;
+        background: rgb(124, 12, 12);
+        color: white;
+        border-radius: 40px;
+        margin-left: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        left: 20%;
+        margin-top: 10px;
+    }
+}
+
+@media all and (max-width: 300px){
+    .customBike{
+        position: absolute;
+        width: 11rem;
+        padding: 1rem;
+        cursor: pointer;
+        background: rgb(124, 12, 12);
+        color: white;
+        border-radius: 40px;
+        margin-left: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        left: 20%;
+        margin-top: 10px;
+    }
+}
