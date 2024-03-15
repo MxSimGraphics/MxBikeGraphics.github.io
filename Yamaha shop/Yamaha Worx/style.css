@@ -71,13 +71,13 @@ img{
 .product-price span{
     font-weight: 400;
 }
-/* .last-price span{
+.last-price span{
     color: #f64749;
     text-decoration: line-through;
 }
 .new-price span{
-    color: #256eff;
-} */
+    color: black;
+}
 .product-detail h2{
     text-transform: capitalize;
     color: #12263a;
