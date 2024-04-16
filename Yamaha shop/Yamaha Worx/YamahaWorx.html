@@ -122,12 +122,6 @@
               <li>Category: <span>Yamaha</span></li>
             </ul>
           </div>
-          
-          <div class="discount-code">
-            <label for="discountCode">Enter Discount Code:</label>
-            <input type="text" id="discountCode" name="discountCode" style="width:120px;">
-            <button onclick="applyDiscount()">Apply</button>
-          </div>
         </div>
       </div>
     </div>
@@ -172,10 +166,10 @@
     <option>Select an option...</option>
 </select>
 
-        <h2>SEAT COVER</h2>
-            <select name="Seat cover" id="slct5" style="max-width: 60%;" onchange="applyDiscount()">
-                 <option>Select an option...</option>
-            </select>
+       <h2>SEAT COVER</h2>
+<select name="Seat cover" id="slct5" style="max-width: 60%;" onchange="showTextInput()">
+    <option>Select an option...</option>
+</select>
 <!-- <input type="text" id="otherSeatCover" name="Other Seat cover" placeholder="Seat cover" style="max-width: 60%; display: none;"> -->
 
 <h2 id="racenumber">RACE NUMBER</h2>
