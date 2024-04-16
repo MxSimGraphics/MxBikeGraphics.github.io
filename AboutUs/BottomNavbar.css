@@ -1,186 +1,42 @@
 footer {
-    margin-top: 330px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
     padding: 10px;
     background-color: black;
     color: white;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-    .about{
-        font-weight: bold;
-        text-align: left;
-        font-size: 15px;
-        padding: 10px;
-    }
-    .contact{
-        font-weight: bold;
-        text-align: left;
-        font-size: 15px;
-        padding: 10px;
-        margin-bottom: -76px;
-    }
-    .prodtime{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px;
-    }
-    .privacy{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px;
-    }
-    .iglogo{
-        width: 30px;
-        float: right;
-        margin-top: -45px;
-    }
 
-@media all and (max-width: 1600px){
-    footer {
-        margin-top: 167px;
-        padding: 10px;
-        background-color: black;
-        color: white;
-        text-align:left;
-    }
-    .about{
-        font-weight: bold;
-        text-align: left;
-        font-size: 15px;
-        padding: 10px;
-    }
-    .contact{
-        font-weight: bold;
-        text-align: left;
-        font-size: 15px;
-        padding: 10px;
-    }
-    .prodtime{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px;
-    }
-    .privacy{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px;
-    }
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.about, .contact, .prodtime, .privacy, .faq {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
 }
-@media all and (max-width: 380px){
-    footer {
-        margin-top: 136px;
-        padding: 40px;
-        background-color: black;
-        color: white;
-        text-align:left;
-    }
-    .about{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px;
-    }
-    .contact{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 25px;
-    }
-    .prodtime{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 5px;
-    }
-    .privacy{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 30px;
-    }
-    .iglogo{
-        width: 30px;
-        margin-right: 120px;
-        margin-top: 0px;
+
+.iglogo {
+    width: 25px;
+}
+
+.copyright {
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
     }
 }
-@media all and (max-width: 320px){
-    footer {
-        margin-top: 136px;
-        padding: 40px;
-        background-color: black;
-        color: white;
-        text-align:left;
-    }
-    .about{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px;
-    }
-    .contact{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 25px;
-    }
-    .prodtime{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 5px;
-    }
-    .privacy{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 30px;
-    }
-    .iglogo{
-        width: 30px;
-        margin-right: 87px;
-        margin-top: 0px;
-    }
-}
-@media all and (max-width: 300px){
-    footer {
-        margin-top: 136px;
-        padding: 40px;
-        background-color: black;
-        color: white;
-        text-align:left;
-    }
-    .about{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px;
-    }
-    .contact{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 25px;
-    }
-    .prodtime{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 5px;
-    }
-    .privacy{
-        font-weight: bold;
-        text-align: center;
-        font-size: 15px;
-        padding: 30px;
-    }
-    .iglogo{
-        width: 30px;
-        margin-right: 80px;
-        margin-top: 0px;
-    }
-}
+
+
