@@ -109,6 +109,7 @@
 
           <div class = "product-price">
             <p class = "last-price">Price: <span>$15.00</span></p>
+            <p class = "discounted-price" style="display: none;">Discounted Price: <span id="discountedPrice"></span></p>
 <!--             <p class = "new-price">Price: <span>$10.00</span> Sale</p> -->
           </div>
 
@@ -122,6 +123,12 @@
               <li>Available: <span>Mx simulator<span style="color: green;">✓</span><span> Mx bikes<span style="color: green;">✓</span></span></span></li>
               <li>Category: <span>Yamaha</span></li>
             </ul>
+          </div>
+          
+          <div class="discount-code">
+            <label for="discountCode">Enter Discount Code:</label>
+            <input type="text" id="discountCode" name="discountCode" style="width:120px;">
+            <button onclick="applyDiscount()">Apply</button>
           </div>
         </div>
       </div>
@@ -167,10 +174,10 @@
     <option>Select an option...</option>
 </select>
 
-<h2>SEAT COVER</h2>
-<select name="Seat cover" id="slct5" style="max-width: 60%;" onchange="showTextInput()">
-    <option>Select an option...</option>
-</select>
+        <h2>SEAT COVER</h2>
+            <select name="Seat cover" id="slct5" style="max-width: 60%;" onchange="applyDiscount()">
+                 <option>Select an option...</option>
+            </select>
 <!-- <input type="text" id="otherSeatCover" name="Other Seat cover" placeholder="Seat cover" style="max-width: 60%; display: none;"> -->
 
 <h2 id="racenumber">RACE NUMBER</h2>
@@ -228,6 +235,39 @@
         moreText.style.display = "inline";
       }
     }
+
+
+    //discount
+function applyDiscount() {
+    var discountCode = document.getElementById("discountCode").value;
+    var discountCodeUsedInput = document.getElementById("discountCodeUsed");
+    var originalPriceElement = document.getElementById("originalPrice");
+    var selectedSeatCover = document.getElementById("slct5").value; // Get selected seat cover
+ // Set the value of the hidden input field
+    discountCodeUsedInput.value = discountCode;
+
+
+    // Calculate original price based on selected seat cover
+    var originalPrice = selectedSeatCover.includes("Seat cover") ? 17.00 : 15.00;
+
+    // Check if discount code is valid
+    if (discountCode === "SummerSale") {
+        var discountedPrice = originalPrice * 0.7; // Calculate 30% discount
+        originalPriceElement.style.textDecoration = "line-through"; // Add strikethrough
+        originalPriceElement.style.color = "red"; // Change color to red
+        originalPriceElement.innerHTML = "$" + originalPrice.toFixed(2); // Update to show original price
+        var discountedPriceElement = document.getElementById("discountedPrice");
+        discountedPriceElement.innerHTML = "$" + discountedPrice.toFixed(2); // Display discounted price
+        discountedPriceElement.parentNode.style.display = "block"; // Display discounted price section
+    } else {
+        // Reset the price to original price
+        originalPriceElement.innerHTML = "$" + originalPrice.toFixed(2);
+        originalPriceElement.style.textDecoration = "none"; // Remove strikethrough
+        originalPriceElement.style.color = "black"; // Change color back to black
+        var discountedPriceElement = document.getElementById("discountedPrice");
+        discountedPriceElement.parentNode.style.display = "none"; // Hide discounted price section
+    }
+}
     </script>  
     <script src="../../dropdown.js"></script>
     <script src="select.js"></script>
