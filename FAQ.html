@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="LcwiPscj8suJT84Mz_5PqFoSeCWa5ff8zNKew2sMn2o" />
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    <title>FAQ</title>
+    <link rel="icon" href="../bildes/MotomodsStudio-stroke-black.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-58YLPGKCVW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-58YLPGKCVW');
+    </script>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.faq {
+    font-size: 60px;
+    margin-left: 900px;
+    margin-top: -100px;
+    position: relative;
+    transform: skew(-8deg);
+}
+
+.faq-container {
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 500px;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.question {
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+}
+
+.answer.active {
+    display: block;
+}
+
+@media all and (max-width: 1600px) {
+    .faq {
+        font-size: 50px;
+        margin-left: 750px;
+        margin-top: -100px;
+        position: absolute;
+        transform: skew(-8deg);
+    }
+
+    .faq-container {
+        margin-top: 200px;
+        margin-left: 350px;
+        max-width: 900px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .faq {
+        font-size: 50px;
+        margin-left: 130px;
+        margin-top: -60px;
+        position: absolute;
+        transform: skew(-8deg);
+    }
+
+    .faq-container {
+        font-size: 22px;
+        margin-top: 160px;
+        margin-left: 0;
+        max-width: 600px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+
+    <h1 class="faq">FAQ</h1>
+
+    <div class="faq-container">
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(1)">why i haven't received my design?</div>
+          <div class="answer" id="answer1">If you haven't received your design, it's because you entered the wrong email address. Before you send me a message, please double-check all the fields you entered. If you have not received your design within 1-7 days, please contact me via this email: mxsimgraphics124@gmail.com</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(2)">How do I buy one of the designs?</div>
+          <div class="answer" id="answer2">First, order the design you want me to make. After I make your design, I send you a proof and if everything is satisfactory, then I send you an invoice and when I receive the money, I send you a file with the design.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(3)">Can I Order Design that is not on your design catalog?</div>
+          <div class="answer" id="answer3">Yes, you can! Choose what you want to order: <a href="/Honda shop/CustomBike/CustomBike.php">Honda </a><a href="/Yamaha shop/CustomBike/CustomBike.php">Yamaha </a><a href="/KTM shop/CustomBike/CustomBike.php">KTM </a><a href="/Husqvarna shop/CustomBike/CustomBike.php">Husqvarna </a><a href="/GasGas shop/CustomBike/CustomBike.php">GasGas </a><a href="/Kawasaki shop/CustomBike/CustomBike.php">Kawasaki </a><a href="/Gear shop/CustomGear/CustomGear.php">Gear </a></div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(4)">Do you make design in real life too?</div>
+            <div class="answer" id="answer4">No, I make design only for games which is mx simulator and mx bikes and maybe in the future i will make design for other mx games too.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(5)">How frequently do you release new designs and gear for the games?</div>
+            <div class="answer" id="answer5">I try to release designs once every 1 or 2 weeks.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(6)">Do you offer seasonal discounts on your dirt bike and gear designs?</div>
+            <div class="answer" id="answer6">Yes, we will offer seasonal discounts such as spring and summer discounts.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(7)">If I buy a design for a team, do I pay for each rider's design or is it one price for everything together</div>
+            <div class="answer" id="answer7">You pay for the design of each rider. Example (3 team riders * 15$ = 45$) and the same is the case with gear designs</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(8)">How can I stay updated on new releases for your dirt bike and gear designs?</div>
+            <div class="answer" id="answer8">Follow us on <a href="https://www.instagram.com/motomodsstudio/">Instagram</a> and join our discord server to be informed about new design releases.</div>
+        </div>
+      </div>
+
+      <script>
+        function toggleAnswer(id) {
+          var answer = document.getElementById('answer' + id);
+          answer.classList.toggle('active');
+        }
+      </script>
+
+      <script src="../dropdown.js"></script>
+</body>
+</html>
