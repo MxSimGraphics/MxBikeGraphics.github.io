@@ -1,55 +1,52 @@
-.aboutus{
-    font-size: 40px;
-    text-align: center;
-    margin-top: 100px;
-    -webkit-text-stroke-width:0.2px;
-    -webkit-text-stroke-color: black;
-     transform: skew(-8deg);
-}
-.h2{
-    text-align: center;
-    -webkit-text-stroke-width:0.2px;
-    -webkit-text-stroke-color: black;
-     transform: skew(-8deg)
-}
+        @media all and (max-width: 380px){
+            .text{
+                text-align:left;
+                padding: 20px;
+                -webkit-text-stroke-width:0.2px;
+                -webkit-text-stroke-color: black;
+                transform: skew(0deg)
+            }
+        }
 
-.text{
-    font-size: 20px;
-    text-align:justify;
-    padding: 50px;
-    -webkit-text-stroke-width:0.1px;
-    -webkit-text-stroke-color: black;
-     transform: skew(-8deg)
-}
+        .aboutus-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 90px 20px; /* Adjust margin as needed */
+        }
 
-@media all and (max-width: 380px){
-    .text{
-        font-size: 20px;
-        text-align:left;
-        padding: 50px;
-        -webkit-text-stroke-width:0.2px;
-        -webkit-text-stroke-color: black;
-         transform: skew(0deg)
-    }
-}
-@media all and (max-width: 320px){
-    .text{
-        font-size: 20px;
-        text-align:left;
-        padding: 50px;
-        -webkit-text-stroke-width:0.2px;
-        -webkit-text-stroke-color: black;
-         transform: skew(0deg)
-    }
-}
+        .aboutus {
+            flex: 0 0 calc(50% - 20px); /* Adjust width as needed */
+            border-style: solid;
+            border-radius: 30px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .title{
+            transform: skew(-8deg);
+        }
+        
+        .title, .text {
+            font-size: 30px; /* Reduced font size */
+            text-align: center;
+            -webkit-text-stroke-width:0.2px;
+            -webkit-text-stroke-color: black;
+            margin-top: 0; /* Reset default margin */
+        }
 
-@media all and (max-width: 300px){
-    .text{
-        font-size: 20px;
-        text-align:left;
-        padding: 50px;
-        -webkit-text-stroke-width:0.2px;
-        -webkit-text-stroke-color: black;
-         transform: skew(0deg)
-    }
-}
+        @media all and (max-width: 320px){
+            .title, .text{
+                font-size: 25px; /* Further reduced font size */
+            }
+        }
+
+        @media all and (max-width: 300px){
+            .title, .text{
+                font-size: 20px; /* Even smaller font size */
+            }
+        }
+
+        body {
+            background-color: #f9f9f9; /* Set a light gray background color */
+            margin: 0; /* Remove default body margin */
+        }
