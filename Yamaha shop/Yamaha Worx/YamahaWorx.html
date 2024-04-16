@@ -20,7 +20,33 @@
 
   gtag('config', 'G-58YLPGKCVW');
 </script>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -95px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
   </head>
   <body>
 <header>
@@ -151,8 +177,8 @@
 <div id="secondDropdownContainer"></div>
 
           
-          <h2>FOR THE TEAM</h2>
-<select name="Team" id="slct4" style="max-width: 60%;" onchange="showRiderInputs()"></select>
+        <h2>FOR THE TEAM</h2><div class="tooltip"><img src="https://cdn.iconscout.com/icon/free/png-256/free-information-notice-info-ui-tooltip-guide-30515.png" style="width:30px;"><span class="tooltiptext">You Pay For The Design Of Each Rider. Example (3 Team Riders * 15$ = 45$).</span></div>
+        <select name="Team" id="slct4" style="max-width: 60%;" onchange="showRiderInputs()"></select>
 
 <div id="riderInputsContainer"></div>
 
