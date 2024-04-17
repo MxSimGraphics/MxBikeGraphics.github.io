@@ -30,22 +30,23 @@ img{
     padding: 3.2rem 0;
 }
 .product{
-    margin: 2rem;
+    margin: 1.5rem;
     position: relative;
 }
 .product-content{
+    background: var(--gray);
     cursor: pointer;
 }
 .product-img{
-    width: 360px;
-    height: 200px;
+    width: 290px;
+    height: 50px;
     margin: 0 auto;
     transition: 0.5s ease;
 }
 .product-info{
     background: white;
     padding: 2rem;
-    margin-top: 150px;
+    margin-top: 220px;
 }
 
 .product-name{
@@ -67,31 +68,18 @@ img{
 .product:hover .product-img img{
     transform: scale(1.1);
 }
-@media all and (max-width: 1660px){
-    .product-img{
-        width: 287px;
-        height: 200px;
-        margin: 0 auto;
-        transition: 0.5s ease;
-    }
-    .product-info{
-        background: white;
-        margin-top: 70px;
-        padding: 2rem;
-    }
-}
 
 @media all and (max-width: 380px){
     .product-img{
-        width: 264px;
+        width: 260px;
         height: 200px;
         margin: 0 auto;
         transition: 0.5s ease;
     }
     .product-info{
         background: white;
-        margin-top: 50px;
         padding: 2rem;
+        margin-top: -75px;
     }
 }
 
@@ -108,8 +96,8 @@ img{
     }
     .product-info{
         background: white;
-        margin-top: 10px;
-        padding: 1rem;
+        padding: 2rem;
+        margin-top: -100px;
     }
 }
 
@@ -126,8 +114,8 @@ img{
     }
     .product-info{
         background: white;
-        margin-top: 0;
-        padding: 1rem;
+        padding: 2rem;
+        margin-top: -110px;
     }
 }
 
@@ -158,162 +146,70 @@ img{
     }
 }
 
-.gear{
+.gear {
     margin-top: 33px;
-    width: 1920px;
+    width: 100%;
     height: 450px;
-    max-width: 1903px;
     background-image: url(gearbildes/JerseyShop1.png);
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
     color: white;
     display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 45px;
-   -webkit-text-stroke-width:3px;
-   -webkit-text-stroke-color: black;
-
-   .text{
-    transform: skew(-8deg);
-   }
-}
-@media all and (max-width: 1600px){
-    .gear{
-        max-width: 1600px;
-        margin-top: 33px;
-        width: 1583px;
-        height: 450px;
-        position: relative;
-        background-image: url(gearbildes/JerseyShop2.png);  
-    }
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
 }
 
-@media all and (max-width: 380px){
-    .gear{
-        max-width: 380px;
-        margin-top: -20px;
-        width: 360px;
+@media all and (max-width: 380px) {
+    .gear {
         height: 330px;
-        position: relative;
-        background-image: url(gearbildes/JerseyShop3.png);  
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 17px;
-        -webkit-text-stroke-width:1.7px;
-        -webkit-text-stroke-color: black;
-
-   .text{
-    transform: skew(-8deg);
-   }
+        font-size: 22px;
+        -webkit-text-stroke-width: 2px;
     }
 }
 
-@media all and (max-width: 320px){
-    .gear{
-        max-width: 320px;
-        margin-top: 20px;
-        width: 299px;
+@media all and (max-width: 320px) {
+    .gear {
         height: 260px;
-        position: relative;
-        background-image: url(gearbildes/JerseyShop4.png);  
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 15px;
-        -webkit-text-stroke-width:1.7px;
-        -webkit-text-stroke-color: black;
-
-   .text{
-    transform: skew(-8deg);
-   }
+        font-size: 18px;
+        -webkit-text-stroke-width: 2px;
     }
 }
 
-@media all and (max-width: 300px){
-    .gear{
-        max-width: 300px;
-        margin-top:35px;
-        width: 279px;
+@media all and (max-width: 300px) {
+    .gear {
         height: 230px;
-        position: relative;
-        background-image: url(gearbildes/JerseyShop5.png);  
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        -webkit-text-stroke-width:1.6px;
-        -webkit-text-stroke-color: black;
-
-   .text{
-    transform: skew(-8deg);
-   }
+        font-size: 17px;
+        -webkit-text-stroke-width: 2px;
     }
 }
 
-.customGear{
+.customGear {
     position: absolute;
-    width: 13rem;
+    width: 11rem;
     padding: 1rem;
     cursor: pointer;
     background: rgb(124, 12, 12);
     color: white;
     border-radius: 40px;
     margin-left: 0px;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: bold;
     left: 85%;
     margin-top: 10px;
 }
 
-@media all and (max-width: 380px){
-    .customGear{
-        position: absolute;
-        width: 11rem;
-        padding: 1rem;
-        cursor: pointer;
-        background: rgb(124, 12, 12);
-        color: white;
-        border-radius: 40px;
-        margin-left: 0px;
-        font-size: 20px;
-        font-weight: bold;
+@media all and (max-width: 380px) {
+    .customGear {
         left: 25%;
         margin-top: 10px;
     }
 }
 
-@media all and (max-width: 320px){
-    .customGear{
-        position: absolute;
-        width: 11rem;
-        padding: 1rem;
-        cursor: pointer;
-        background: rgb(124, 12, 12);
-        color: white;
-        border-radius: 40px;
-        margin-left: 0px;
-        font-size: 20px;
-        font-weight: bold;
-        left: 20%;
-        margin-top: 10px;
-    }
-}
-
-@media all and (max-width: 300px){
-    .customGear{
-        position: absolute;
-        width: 11rem;
-        padding: 1rem;
-        cursor: pointer;
-        background: rgb(124, 12, 12);
-        color: white;
-        border-radius: 40px;
-        margin-left: 0px;
-        font-size: 20px;
-        font-weight: bold;
+@media all and (max-width: 320px) {
+    .customGear {
         left: 20%;
         margin-top: 10px;
     }
