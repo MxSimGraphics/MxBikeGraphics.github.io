@@ -22,46 +22,34 @@ img{
 .container{
     width: 88vw;
     margin: 0 auto;
-    margin-left: 15px;
 }
 
 /* product section */
-.products {
+.products{
     background: var(--alice-blue);
     padding: 3.2rem 0;
 }
-
-.product-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 50px;
-}
-
-.product {
-    margin: 2rem;
+.product{
+    margin: 1.5rem;
     position: relative;
-    width: 350px;
 }
-
-.product-content {
+.product-content{
     background: var(--gray);
     cursor: pointer;
 }
-
-.product-img {
-    width: 100%;
+.product-img{
+    width: 470px;
     height: 200px;
-    overflow: hidden;
+    margin: 0 auto;
     transition: 0.5s ease;
 }
-
-.product-info {
+.product-info{
     background: white;
     padding: 2rem;
-    margin-top: -20px;
+    margin-top: 50px;
 }
 
-.product-name {
+.product-name{
     color: black;
     display: block;
     text-decoration: none;
@@ -69,179 +57,160 @@ img{
     text-transform: uppercase;
     font-weight: bold;
 }
-
-.product-price {
+.product-price{
     padding-top: 0.6rem;
     padding-right: 0.6rem;
     display: inline-block;
 }
-
-.product-img img {
+.product-img img{
     transition: transform 0.6s ease;
 }
-
-.product:hover .product-img img {
+.product:hover .product-img img{
     transform: scale(1.1);
 }
 
-@media all and (max-width: 380px) {
-    .product-img {
-        height: 160px;
+@media all and (max-width: 380px){
+    .product-img{
+        width: 260px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.5s ease;
     }
-    .product-info {
+    .product-info{
         background: white;
         padding: 2rem;
-        margin-top: -20px;
-    }
-    .product {
-        margin: 2rem;
-        position: relative;
-        width: 280px;
-    }
-}
-
-@media all and (max-width: 320px) {
-    .product-img {
-        height: 120px;
-    }
-    .product {
-        margin: 2rem;
-        position: relative;
-        width: 230px;
-    }
-}
-
-@media all and (max-width: 300px) {
-    .product-img {
-        height: 120px;
-    }
-    .product {
-        margin: 2rem;
-        position: relative;
-        width: 220px;
-    }
-    .product-info {
-        background: white;
-        padding: 1.3rem;
-        margin-top: -20px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .product-items {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .product-items {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-
-    .product {
-        margin-right: 1rem;
-        margin-left: 1rem;
-    }
-}
-
-@media screen and (min-width: 1336px) {
-    .product-items {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-}
-
-
-.NumberPlate{
-    margin-top: 30px;
-    width: 1920px;
-    height: 450px;
-    max-width: 1903px;
-    background-image: url(numberplatebildes/NumberPlateShop1.png);
-    color: white;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 45px;
-   -webkit-text-stroke-width:3px;
-   -webkit-text-stroke-color: black;
-
-   .text{
-    transform: skew(-8deg);
-   }
-}
-@media all and (max-width: 1600px){
-    .NumberPlate{
-        max-width: 1600px;
-        margin-top: 20px;
-        width: 1583px;
-        height: 450px;
-        position: relative;
-        background-image: url(numberplatebildes/NumberPlateShop2.png);  
-    }
-}
-
-@media all and (max-width: 380px){
-    .NumberPlate{
-        max-width: 380px;
-        margin-top: 20px;
-        width: 360px;
-        height: 330px;
-        position: relative;
-        background-image: url(numberplatebildes/NumberPlateShop3.png);  
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        -webkit-text-stroke-width:2px;
-        -webkit-text-stroke-color: black;
-
-   .text{
-    transform: skew(-8deg);
-   }
+        margin-top: -75px;
     }
 }
 
 @media all and (max-width: 320px){
-    .NumberPlate{
-        max-width: 320px;
-        margin-top: 40px;
-        width: 299px;
-        height: 260px;
-        position: relative;
-        background-image: url(numberplatebildes/NumberPlateShop4.png);  
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 17px;
-        -webkit-text-stroke-width:2px;
-        -webkit-text-stroke-color: black;
-
-   .text{
-    transform: skew(-8deg);
-   }
+    .products{
+        background: var(--alice-blue);
+        padding: 3.2rem 0;
+    }
+    .product-img{
+        width: 215px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.5s ease;
+    }
+    .product-info{
+        background: white;
+        padding: 2rem;
+        margin-top: -100px;
     }
 }
 
 @media all and (max-width: 300px){
-    .NumberPlate{
-        max-width: 300px;
-        margin-top: 50px;
-        width: 279px;
-        height: 230px;
-        position: relative;
-        background-image: url(numberplatebildes/NumberPlateShop5.png);  
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
-        -webkit-text-stroke-width:2px;
-        -webkit-text-stroke-color: black;
+    .products{
+        background: var(--alice-blue);
+        padding: 3.2rem 0;
+    }
+    .product-img{
+        width: 198px;
+        height: 200px;
+        margin: 0 auto;
+        transition: 0.5s ease;
+    }
+    .product-info{
+        background: white;
+        padding: 2rem;
+        margin-top: -110px;
+    }
+}
 
-   .text{
-    transform: skew(-8deg);
-   }
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .products{
+        margin-left: -195px;
+        background: var(--alice-blue);
+        padding: 3.2rem 0;
+    }
+
+    .products .text-light{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.NumberPlate {
+    margin-top: 33px;
+    width: 100%;
+    height: 450px;
+    background-image: url(numberplatebildes/NumberPlateShop1.png);
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+@media all and (max-width: 380px) {
+    .NumberPlate {
+        height: 330px;
+        font-size: 22px;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .NumberPlate {
+        height: 260px;
+        font-size: 18px;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .NumberPlate {
+        height: 230px;
+        font-size: 17px;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+
+.customBike {
+    position: absolute;
+    width: 11rem;
+    padding: 1rem;
+    cursor: pointer;
+    background: rgb(124, 12, 12);
+    color: white;
+    border-radius: 40px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    left: 85%;
+    margin-top: 10px;
+}
+
+@media all and (max-width: 380px) {
+    .customBike {
+        left: 25%;
+        margin-top: 10px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .customBike {
+        left: 20%;
+        margin-top: 10px;
     }
 }
