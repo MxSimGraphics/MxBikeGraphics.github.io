@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    position: relative;
+    position: fixed; /* Change position to fixed */
     bottom: 0;
     padding: 10px;
     background-color: black;
@@ -8,7 +8,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1000; /* Add a high z-index to ensure the footer is on top of other content */
 }
+
 
 .footer-links {
     display: flex;
