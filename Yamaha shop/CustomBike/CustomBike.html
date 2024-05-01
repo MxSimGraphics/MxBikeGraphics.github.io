@@ -87,9 +87,9 @@
 </select>
 
 <h2>SEAT COVER</h2>
-<select name="Seat cover" id="slct5" style="max-width: 60%;" onchange="showTextInput()">
-  <option>Select an option...</option>
-</select>
+            <select name="Seat cover" id="slct5" style="max-width: 60%;" onchange="applyDiscount()">
+                 <option>Select an option...</option>
+            </select>
 <!-- <input type="text" id="otherSeatCover" name="Other Seat cover" placeholder="Seat cover" style="max-width: 60%; display: none;"> -->
 
 <h2 id="racenumber">RACE NUMBER</h2>
@@ -105,10 +105,23 @@
         <textarea name="Message" placeholder="Logos" style="max-width: 60%;"></textarea>
 
         <textarea name="Message" placeholder="Message (Optional)" style="max-width: 60%;" ></textarea>
+                <input type="hidden" name="DiscountCodeUsed" id="discountCodeUsed">
         <button type="submit">Send</button>
     </form>
 </div>
 
+<div class = "product-price">
+            <p class = "last-price">Price: <span id="originalPrice">$15.00</span></p>
+            <p class = "discounted-price" style="display: none;">Discounted Price: <span id="discountedPrice"></span></p>
+</div>
+
+<div class="discount-code-container" style="text-align: center;">
+    <div class="discount-code">
+        <label for="discountCode">Enter Discount Code:</label>
+        <input type="text" id="discountCode" name="discountCode" style="width:120px;">
+        <button onclick="applyDiscount()">Apply</button>
+    </div>
+</div>
 
 <footer>
     <h2 style="text-align: center;transform: skew(-8deg);">Thanks to</h2>
@@ -135,5 +148,6 @@
 <script src="../../dropdown.js"></script>
 <script src="select.js"></script>
 <script src="../../DesignPageFiles/select.js"></script>
+<script src="../../DesignPageFiles/discount.js"></script>
 </body>
 </html>
