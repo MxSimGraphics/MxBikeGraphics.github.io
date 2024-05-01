@@ -66,7 +66,15 @@ body{
         text-align: center;
     }
 }
-
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+.product-price span{
+    font-weight: 400;
+}
 /* message */
 .container {
     padding: 20px;
@@ -133,91 +141,51 @@ body{
     .container {
         margin-left: 00px;
         padding: 20px;
-        margin-top: 30px;
-        text-align: center;
-      }
-}
-
-@media all and (max-width: 320px){
-    .container {
-        margin-left: 00px;
-        padding: 20px;
-        margin-top: 30px;
-        text-align: center;
-      }
-}
-
-@media all and (max-width: 300px){
-    .container {
-        margin-left: 00px;
-        padding: 20px;
-        margin-top: 30px;
-        text-align: center;
-      }
-}
-
-.nfs{
-    width: 650px;
-    margin-left: 30px;
-    margin-top: 250px;
-    position: absolute;
-}
-.ysc{
-    width: 650px;
-    margin-left: 1210px;
-    margin-top: 250px;
-    position: absolute;
-}
-
-@media (max-width: 1600px) {
-    .nfs{
-        width: 510px;
-        margin-left: 15px;
-        margin-top: 250px;
-        position: absolute;
-    }
-    .ysc{
-        width: 510px;
-        margin-left: 1050px;
-        margin-top: 250px;
-        position: absolute;
-    }
-}
-@media all and (max-width: 380px){
-    .nfs{
-        margin-top: 200px;
-        width: 340px;
-        margin-left: 5px;
-    }
-    .ysc{
         margin-top: 390px;
-        width: 340px;
-        margin-left: 5px;
-    }
+        text-align: center;
+      }
 }
 
 @media all and (max-width: 320px){
-    .nfs{
-        margin-top: 170px;
-        width: 290px;
-        margin-left: 5px;
-    }
-    .ysc{
-        margin-top: 330px;
-        width: 300px;
-        margin-left: 5px;
-    }
+    .container {
+        margin-left: 00px;
+        padding: 20px;
+        margin-top: 340px;
+        text-align: center;
+      }
 }
 
 @media all and (max-width: 300px){
-    .nfs{
-        margin-top: 180px;
-        width: 280px;
-        margin-left: 5px;
-    }
-    .ysc{
-        margin-top: 340px;
-        width: 280px;
-        margin-left: 5px;
-    }
+    .container {
+        margin-left: 00px;
+        padding: 20px;
+        margin-top: 320px;
+        text-align: center;
+      }
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -95px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
