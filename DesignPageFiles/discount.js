@@ -11,7 +11,7 @@ function applyDiscount() {
     var originalPrice = selectedSeatCover.includes("Seat cover") ? 17.00 : 15.00;
 
     // Check if discount code is valid
-    if (discountCode === "") {
+    if (discountCode === "43243243242") {
         var discountedPrice = originalPrice * 0.7; // Calculate 30% discount
         originalPriceElement.style.textDecoration = "line-through"; // Add strikethrough
         originalPriceElement.style.color = "red"; // Change color to red
