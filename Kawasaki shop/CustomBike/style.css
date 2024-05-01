@@ -66,7 +66,15 @@ body{
         text-align: center;
     }
 }
-
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+.product-price span{
+    font-weight: 400;
+}
 /* message */
 .container {
     padding: 20px;
@@ -221,3 +229,30 @@ body{
         margin-left: 5px;
     }
 }
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -95px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
