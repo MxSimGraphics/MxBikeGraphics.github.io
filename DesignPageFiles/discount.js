@@ -3,16 +3,15 @@ function applyDiscount() {
     var discountCodeUsedInput = document.getElementById("discountCodeUsed");
     var originalPriceElement = document.getElementById("originalPrice");
     var selectedSeatCover = document.getElementById("slct5").value; // Get selected seat cover
- // Set the value of the hidden input field
+    // Set the value of the hidden input field
     discountCodeUsedInput.value = discountCode;
-
 
     // Calculate original price based on selected seat cover
     var originalPrice = selectedSeatCover.includes("Seat cover") ? 17.00 : 15.00;
 
     // Check if discount code is valid
     if (discountCode === "motomodsstudio") {
-        var discountedPrice = originalPrice * 0.4; // Calculate 30% discount
+        var discountedPrice = originalPrice * 0.4; // Calculate 60% discount
         originalPriceElement.style.textDecoration = "line-through"; // Add strikethrough
         originalPriceElement.style.color = "red"; // Change color to red
         originalPriceElement.innerHTML = "$" + originalPrice.toFixed(2); // Update to show original price
