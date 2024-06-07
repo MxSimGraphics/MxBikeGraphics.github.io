@@ -11,7 +11,7 @@ function applyDiscount() {
 
     // Check if discount code is valid
     if (discountCode === "motomodsstudio") {
-        var discountedPrice = originalPrice * 0.4; // Calculate 60% discount
+        var discountedPrice = originalPrice * 0.7; // Calculate 30% discount
         originalPriceElement.style.textDecoration = "line-through"; // Add strikethrough
         originalPriceElement.style.color = "red"; // Change color to red
         originalPriceElement.innerHTML = "$" + originalPrice.toFixed(2); // Update to show original price
