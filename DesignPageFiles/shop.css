@@ -48,7 +48,13 @@ img{
     padding: 2rem;
     margin-top: 50px;
 }
-
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #000000;
+}
 .product-name{
     color: black;
     display: block;
@@ -56,11 +62,6 @@ img{
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
-}
-.product-price{
-    padding-top: 0.6rem;
-    padding-right: 0.6rem;
-    display: inline-block;
 }
 .product-img img{
     transition: transform 0.6s ease;
