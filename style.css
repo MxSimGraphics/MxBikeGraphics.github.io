@@ -110,6 +110,28 @@ body {
     background: red;
   }
 
+/*countdown */
+  .countdown-wrapper {
+    width: 100%;
+    background-color: black;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.countdown-text, .countdown-timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.countdown-text {
+    margin-right: 10px;
+}
 
   .text-wrapper {
     width: 100%;
