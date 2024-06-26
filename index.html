@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="footer.css">
-<title>MotoMods Studio Home</title>
+<title>MotoModsStudio Home</title>
 <link rel="icon" href="bildes/MotomodsStudio-stroke-black.png">
     
 <!-- Google tag (gtag.js) -->
@@ -22,14 +22,14 @@
 <body>
 
    <header>
-    <a href="index.html"><img class="logo" src="bildes/MotomodsStudio.png"></a>
+    <a href="index.php"><img class="logo" src="bildes/MotomodsStudio.png"></a>
 
     <input type="checkbox" id="menu-bar">
     <label for="menu-bar"><img src="bildes/MenuBar.png" style="width: 40px;"></label>
 
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.php">HOME</a></li>
             <li class="dropdown-toggle"><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/Shop/Shop.html">SHOP↓</a>
                 <ul>
                     <div class="dropdown">
@@ -60,14 +60,13 @@
     </nav>
 </header>
 <script src="dropdown.js"></script>
-    
     <div class="slider">
         <div class="slides">
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
             <div class="slide first">
-                <img src="bildes/mxsim&bikesgraphicsphoto.png" alt="">
+                <img src="bildes/SummerSale.png" alt="">
             </div>
             <div class="slide">
                 <a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/Gear%20shop/gearveikals.html"><img src="bildes/jersey designs1.png" alt=""></a>
@@ -93,7 +92,13 @@
         <h1>New Number plate design is available: <a href="https://motomodsstudio.com/numberplateshop/sx%20world%20champion%202024/sxworldchampion2024" style="color: white;">Check It Out Here</a></h1>
     </div>
 
-
+    <div class="countdown-wrapper">
+        <div class="countdown-container">
+            <span class="countdown-text">Enjoy a 40% discount in our Summer Sale before it ends in:</span>
+            <div class="countdown-timer" id="countdown-timer"></div>
+        </div>
+    </div>    
+    
 
     <div class="gallery">
         <div class="image" data-name="gears"><span><a href="https://mxsimgraphics.github.io/MxBikeGraphics.github.io/Gear%20shop/gearveikals.html"><img src="bildes/gears.png"></a></span></div>
@@ -111,8 +116,6 @@
     </div>
     <p style="padding-top: 10px;text-align: center;transform: skew(-8deg);font-weight: bold;">for allowing us to use their design elements.</p>
 
-
-
     <div class="footer-links">
         <p class="about"><a href="../../AboutUs/aboutus.html" style="color: white;">About us</a></p>
         <p class="contact"><a href="../../Contact/Contact.html" style="color: white;">Contact</a></p>
@@ -126,5 +129,29 @@
 
     <script src="slider.js"></script>
     <script src="dropdown.js"></script>
+
+    <script>
+        function countdown() {
+            const endDate = new Date('July 11, 2024 23:59:59').getTime();
+            const now = new Date().getTime();
+            const distance = endDate - now;
+    
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            document.getElementById("countdown-timer").innerHTML =
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("countdown-timer").innerHTML = "SALE ENDED";
+            }
+        }
+    
+        const timer = setInterval(countdown, 1000);
+    </script>
+    
 </body>
 </html>
