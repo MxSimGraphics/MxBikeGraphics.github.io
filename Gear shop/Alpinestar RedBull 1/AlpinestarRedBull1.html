@@ -122,6 +122,7 @@
 
           <div class = "product-price">
             <p class = "last-price">Price: <span id="originalPrice">$10.00</span></p>
+            <p class = "new-price">Summer Sale Price: <span id="newPrice">$6.00</span></p>
             <p class = "discounted-price" style="display: none;">Discounted Price: <span id="discountedPrice"></span></p>
           </div>
 
@@ -205,39 +206,39 @@
     <p class="copyright">© 2024 MotoModsStudio</p>
 </footer>
 
-  <script>
-function myFunction3() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-
-    if (dots.style.display === "none") {
+<script>
+    function myFunction3() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
+        btnText.innerHTML = "Read more"; 
         moreText.style.display = "none";
-    } else {
+      } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Read less";
+        btnText.innerHTML = "Read less"; 
         moreText.style.display = "inline";
+      }
     }
-}
 
 //discount
 function applyDiscount() {
     var discountCode = document.getElementById("discountCode").value;
     var discountCodeUsedInput = document.getElementById("discountCodeUsed");
     var originalPriceElement = document.getElementById("originalPrice");
-
-    // Set the value of the hidden input field
+ // Set the value of the hidden input field
     discountCodeUsedInput.value = discountCode;
+
 
     // Calculate original price based on selected seat cover
     var originalPrice = 10.00;
 
     // Define discount codes and their respective discounts
     var discounts = {
-        "dfsfsfsfdsf": 0.4,    // 40% discount
-        "dfsdfsf": 0.3     // 30% discount
+        "summersale": 0.4,    // 40% discount
+        // "sponsorship": 0.3    // 30% discount
     };
 
     // Check if the discount code is valid
@@ -258,13 +259,12 @@ function applyDiscount() {
         originalPriceElement.innerHTML = "$" + originalPrice.toFixed(2);
         originalPriceElement.style.textDecoration = "none"; // Remove strikethrough
         originalPriceElement.style.color = "black"; // Change color back to black
-
+        
         var discountedPriceElement = document.getElementById("discountedPrice");
         discountedPriceElement.parentNode.style.display = "none"; // Hide discounted price section
     }
 }
-
-    </script>  
+</script>  
     <script src="../../dropdown.js"></script>
     <script src="select.js"></script>
     <script src="script.js"></script>
