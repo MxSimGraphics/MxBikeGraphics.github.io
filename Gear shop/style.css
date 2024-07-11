@@ -56,13 +56,13 @@ img{
     text-transform: uppercase;
     font-weight: bold;
 }
-.last-price span{
+/* .last-price span{
     color: #f64749;
     text-decoration: line-through;
 }
 .new-price span{
     color: Black;
-}
+} */
 .product-img img{
     transition: transform 0.6s ease;
 }
