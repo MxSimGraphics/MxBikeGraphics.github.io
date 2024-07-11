@@ -66,13 +66,13 @@ body{
         text-align: center;
     }
 }
-.last-price span{
+/* .last-price span{
     color: #f64749;
     text-decoration: line-through;
 }
 .new-price span{
     color: #000000;
-}
+} */
 .product-price{
     margin: 1rem 0;
     font-size: 1rem;
