@@ -150,7 +150,7 @@ showRiderInputs();
 
 
 
-let species5 = ["As shown", "Seat cover 1 (+$2.00)", "Seat cover 2 (+$2.00)", "Seat cover 3 (+$2.00)", "Seat cover 4 (+$2.00)", "Seat cover 5 (+$2.00)", "Seat cover 6 (+$2.00)", "Seat cover 7 (+$2.00)",];
+let species5 = ["As shown", "Seat cover 1", "Seat cover 2", "Seat cover 3", "Seat cover 4", "Seat cover 5", "Seat cover 6", "Seat cover 7",];
 
 let slct5 = document.getElementById("slct5");
 // let otherSeatCoverInput = document.getElementById("otherSeatCover");
